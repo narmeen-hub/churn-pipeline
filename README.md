@@ -29,5 +29,9 @@ model_path = hf_hub_download(
 )
 pipeline = joblib.load(model_path)
 
+
+## Link of churn-pipeline.pkl
+https://huggingface.co/narmeenbilal/churn-pipeline/tree/main
+
 # Predict on new data (must have same feature columns)
 prediction = pipeline.predict(X_new)
